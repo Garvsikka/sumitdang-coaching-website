@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -15,12 +16,15 @@
                 <span class="logo-icon">📚</span>
                 <span class="logo-text">Ajay Dang</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#results">Results</a></li>
-                <li><a href="#admissions">Admissions</a></li>
-            </ul>
-            <button class="btn-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Join Now</button>
+            <div class="nav-center-group">
+                <ul class="nav-links">
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                </ul>
+                <span class="nav-pill-badge">25+ Years of Excellence</span>
+            </div>
+            <button class="btn-cta-gold" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Join Now</button>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -33,7 +37,7 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Master Commerce with <span class="accent">Academic Excellence</span></h1>
+                <h1>Master Commerce with <span class="accent-gold">Academic Excellence</span></h1>
                 <p>Transform your potential into excellence with India's most trusted commerce mentors. Score 95+ in boards with proven methodology and personalized guidance.</p>
                 <div class="hero-buttons">
                     <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Your Journey</button>
@@ -41,53 +45,88 @@
                 </div>
             </div>
             <div class="hero-image">
-                <div class="image-placeholder">
-                    <i class="fas fa-graduation-cap"></i>
+                <div class="image-placeholder classroom-placeholder">
+                    <div class="placeholder-inner">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Professional Classroom Photo</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="trust-ribbon">
-            <div class="trust-item">
-                <span class="trust-number">15+</span>
-                <span class="trust-label">Years Experience</span>
-            </div>
-            <div class="trust-item">
-                <span class="trust-number">5000+</span>
-                <span class="trust-label">Students Taught</span>
-            </div>
-            <div class="trust-item">
-                <span class="trust-number">98%</span>
-                <span class="trust-label">Success Rate</span>
             </div>
         </div>
     </section>
 
+    <!-- Statistics Ribbon -->
+    <div class="stats-ribbon">
+        <div class="stat-item">
+            <i class="fas fa-award stat-icon"></i>
+            <div class="stat-text">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Years Exp</span>
+            </div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <i class="fas fa-users stat-icon"></i>
+            <div class="stat-text">
+                <span class="stat-number">5000+</span>
+                <span class="stat-label">Students</span>
+            </div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <i class="fas fa-chart-line stat-icon"></i>
+            <div class="stat-text">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Success Rate</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Why Choose Us -->
     <section class="why-choose-us">
         <div class="container">
-            <h2 class="section-title">Why Choose <span class="accent">Ajay Dang Classes</span></h2>
+            <h2 class="section-title">Why Choose <span class="accent-gold">Ajay Dang Classes</span></h2>
             <div class="value-props-grid">
                 <div class="value-prop-card">
-                    <div class="card-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
                     <h3>Concept Clarity</h3>
                     <p>Deep conceptual teaching that transforms complex topics into simple, understandable lessons.</p>
                 </div>
                 <div class="value-prop-card">
-                    <div class="card-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
+                    <div class="card-icon"><i class="fas fa-medal"></i></div>
                     <h3>Proven Results</h3>
                     <p>Students consistently score 99-100 in Accountancy and excel in Economics.</p>
                 </div>
                 <div class="value-prop-card">
-                    <div class="card-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
+                    <div class="card-icon"><i class="fas fa-handshake"></i></div>
                     <h3>Personal Mentorship</h3>
-                    <p>One-on-one guidance and 24×7 doubt support from dedicated mentors.</p>
+                    <p>One-on-one guidance and 24x7 doubt support from dedicated mentors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Your Mentor -->
+    <section class="mentor-section">
+        <div class="container">
+            <h2 class="section-title">Meet Your <span class="accent-gold">Mentor</span></h2>
+            <div class="mentor-container">
+                <div class="mentor-photo-wrap">
+                    <div class="mentor-photo-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Professional Photo</span>
+                    </div>
+                </div>
+                <div class="mentor-bio">
+                    <p class="mentor-quote">"Teaching is not just about delivering content — it is about igniting clarity, building confidence, and shaping students who think for themselves."</p>
+                    <h3 class="mentor-name">Ajay Dang <span class="mentor-title">— Senior Accounts Educator &amp; Expert Commerce Faculty</span></h3>
+                    <ul class="mentor-credentials">
+                        <li><i class="fas fa-check-circle"></i> 25+ Years Experience in Commerce Education</li>
+                        <li><i class="fas fa-check-circle"></i> Expert Commerce Faculty — Accounts &amp; Economics</li>
+                        <li><i class="fas fa-check-circle"></i> Personalized Doubt Sessions for Every Student</li>
+                        <li><i class="fas fa-check-circle"></i> Proven Board Results — Consistent 99-100 Scores</li>
+                        <li><i class="fas fa-check-circle"></i> Taught 5000+ Students Across Delhi NCR</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -96,7 +135,7 @@
     <!-- Programs -->
     <section id="programs" class="programs-section">
         <div class="container">
-            <h2 class="section-title">Our <span class="accent">Programs</span></h2>
+            <h2 class="section-title">Our <span class="accent-gold">Programs</span></h2>
             <div class="programs-grid">
                 <div class="program-card">
                     <h3>Class 11 Commerce</h3>
@@ -109,27 +148,25 @@
                     </ul>
                     <button class="btn btn-primary btn-register" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Register Now</button>
                 </div>
-
                 <div class="program-card">
                     <h3>Class 12 Commerce</h3>
                     <p class="program-subtitle">Board Mastery</p>
                     <ul class="subject-list">
                         <li>Advanced Accountancy</li>
-                        <li>Macroeconomics & Microeconomics</li>
-                        <li>Business Law & Ethics</li>
+                        <li>Macroeconomics &amp; Microeconomics</li>
+                        <li>Business Law &amp; Ethics</li>
                         <li>Exam Strategy</li>
                     </ul>
                     <button class="btn btn-primary btn-register" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Register Now</button>
                 </div>
-
                 <div class="program-card featured">
                     <span class="featured-badge">PREMIUM</span>
-                    <h3>All Subjects Bundle</h3>
-                    <p class="program-subtitle">Complete Excellence</p>
+                    <h3>CUET / Professional Prep</h3>
+                    <p class="program-subtitle">Beyond Boards</p>
                     <ul class="subject-list">
-                        <li>All Commerce Subjects</li>
-                        <li>Both Classes (11 & 12)</li>
-                        <li>Unlimited Doubt Support</li>
+                        <li>CUET Commerce Modules</li>
+                        <li>Entrance Exam Strategy</li>
+                        <li>Accountancy Advanced Topics</li>
                         <li>Priority Mentoring</li>
                     </ul>
                     <button class="btn btn-primary btn-register" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Register Now</button>
@@ -141,35 +178,35 @@
     <!-- Methodology -->
     <section class="methodology-section">
         <div class="container">
-            <h2 class="section-title">Our Teaching <span class="accent">Methodology</span></h2>
+            <h2 class="section-title">Our Teaching <span class="accent-gold">Methodology</span></h2>
             <div class="methodology-grid">
                 <div class="methodology-card">
-                    <div class="method-number">1</div>
+                    <div class="method-number">01</div>
                     <h3>Assessment</h3>
                     <p>Comprehensive evaluation of each student's current knowledge level.</p>
                 </div>
                 <div class="methodology-card">
-                    <div class="method-number">2</div>
+                    <div class="method-number">02</div>
                     <h3>Planning</h3>
                     <p>Strategic curriculum planning with milestones and targets.</p>
                 </div>
                 <div class="methodology-card">
-                    <div class="method-number">3</div>
+                    <div class="method-number">03</div>
                     <h3>Concept Teaching</h3>
                     <p>Deep dive into each topic with conceptual clarity.</p>
                 </div>
                 <div class="methodology-card">
-                    <div class="method-number">4</div>
+                    <div class="method-number">04</div>
                     <h3>Testing</h3>
                     <p>Weekly prize-winning tests with instant feedback.</p>
                 </div>
                 <div class="methodology-card">
-                    <div class="method-number">5</div>
+                    <div class="method-number">05</div>
                     <h3>Doubt Solving</h3>
-                    <p>24×7 doubt support from dedicated mentors.</p>
+                    <p>24x7 doubt support from dedicated mentors.</p>
                 </div>
                 <div class="methodology-card">
-                    <div class="method-number">6</div>
+                    <div class="method-number">06</div>
                     <h3>Reporting</h3>
                     <p>Regular progress reports and performance analysis.</p>
                 </div>
@@ -180,7 +217,7 @@
     <!-- Results -->
     <section id="results" class="results-section">
         <div class="container">
-            <h2 class="section-title">Student <span class="accent">Success Stories</span></h2>
+            <h2 class="section-title">Student <span class="accent-gold">Success Stories</span></h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
@@ -188,17 +225,15 @@
                     <p class="student-name">Priya Sharma</p>
                     <p class="student-score">Board Exam: 99/100</p>
                 </div>
-
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p>"Economics seemed impossible until Ashima Ma'am explained it."</p>
                     <p class="student-name">Arjun Patel</p>
                     <p class="student-score">Board Exam: 96/100</p>
                 </div>
-
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"24×7 doubt support was a game changer for me."</p>
+                    <p>"24x7 doubt support was a game changer for me."</p>
                     <p class="student-name">Neha Gupta</p>
                     <p class="student-score">Board Exam: 98/100</p>
                 </div>
@@ -209,7 +244,7 @@
     <!-- Admissions -->
     <section id="admissions" class="admissions-section">
         <div class="container">
-            <h2 class="section-title">Ready to Transform Your <span class="accent">Academic Future?</span></h2>
+            <h2 class="section-title">Ready to Transform Your <span class="accent-gold">Academic Future?</span></h2>
             <p>Join hundreds of successful students who have achieved excellence with Ajay Dang Classes</p>
             <p class="admissions-highlight">⚠️ Limited Seats Available - Enroll Today</p>
             <button class="btn btn-primary btn-large" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Your Journey Now</button>
@@ -224,7 +259,7 @@
                 <ul>
                     <li><a href="#programs">Class 11 Commerce</a></li>
                     <li><a href="#programs">Class 12 Commerce</a></li>
-                    <li><a href="#programs">All Subjects Bundle</a></li>
+                    <li><a href="#programs">CUET / Professional Prep</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -245,17 +280,14 @@
             <div class="footer-column">
                 <h4>Connect With Us</h4>
                 <div class="social-links">
-                    <a href="https://instagram.com/ajaydangclasses" target="_blank" class="social-icon" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://youtube.com/@ajaydangclasses" target="_blank" class="social-icon" title="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://wa.me/919876543210?text=Hi!%20I%20am%20interested%20in%20your%20commerce%20classes" target="_blank" class="social-icon" title="WhatsApp">
+                    <a href="https://wa.me/919876543210?text=Hi!%20I%20am%20interested%20in%20your%20commerce%20classes" target="_blank" class="social-icon social-icon-gold" title="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
-                    <a href="tel:+919876543210" class="social-icon" title="Call Us">
-                        <i class="fas fa-phone"></i>
+                    <a href="https://youtube.com/@ajaydangclasses" target="_blank" class="social-icon social-icon-gold" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ajaydang" target="_blank" class="social-icon social-icon-gold" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
                 <button class="btn-settings" id="configBtn" title="Configure Links">
@@ -275,16 +307,16 @@
             <h2>Configure Social Media Links</h2>
             <form id="socialConfigForm">
                 <div class="form-group">
-                    <label for="instagram-url"><i class="fab fa-instagram"></i> Instagram URL</label>
-                    <input type="url" id="instagram-url" placeholder="https://instagram.com/yourusername">
-                </div>
-                <div class="form-group">
                     <label for="youtube-url"><i class="fab fa-youtube"></i> YouTube URL</label>
                     <input type="url" id="youtube-url" placeholder="https://youtube.com/@yourchannel">
                 </div>
                 <div class="form-group">
                     <label for="whatsapp-number"><i class="fab fa-whatsapp"></i> WhatsApp Number</label>
                     <input type="tel" id="whatsapp-number" placeholder="+91 9876543210">
+                </div>
+                <div class="form-group">
+                    <label for="linkedin-url"><i class="fab fa-linkedin-in"></i> LinkedIn URL</label>
+                    <input type="url" id="linkedin-url" placeholder="https://linkedin.com/in/yourprofile">
                 </div>
                 <div class="form-group">
                     <label for="phone-number"><i class="fas fa-phone"></i> Phone Number</label>
