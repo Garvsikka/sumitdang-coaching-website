@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Dang Coaching - Best CBSE Coaching in Delhi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Sumit Dang Coaching</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Best CBSE Coaching in Delhi</h1>
+            <p>100% Results Guaranteed | 15+ Years Experience | 5000+ Students</p>
+            <button class="cta-btn">Join Free Demo</button>
+        </div>
+    </section>
+
+    <section id="faculty" class="faculty-section">
+        <div class="container">
+            <h2>Our Expert Faculty</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <img src="sumit_faculty.jpeg" alt="Sumit Dang" class="faculty-img">
+                    <h3>Sumit Dang</h3>
+                    <p>Maths & Science Expert | 15+ Years Experience</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="ashima_faculty.jpeg" alt="Ashima" class="faculty-img">
+                    <h3>Ashima</h3>
+                    <p>English & Social Science | 10+ Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Hybrid Mode</h3>
+                    <p>Live Online + Offline Classes</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Award Functions & Parties</h3>
+                    <p>Regular celebrations & motivation</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Regular Tests</h3>
+                    <p>Weekly tests with analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Ready to Join?</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Class</option>
+                    <option>6th</option>
+                    <option>7th</option>
+                    <option>8th</option>
+                    <option>9th</option>
+                    <option>10th</option>
+                </select>
+                <button type="submit">Get Free Demo</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
