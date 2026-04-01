@@ -38,8 +38,8 @@ if (form) {
 function updateLinks() {
     const instagram = localStorage.getItem('ajaydang_instagram') || 'https://www.instagram.com/sumit_dangclasses';
     const youtube = localStorage.getItem('ajaydang_youtube') || 'https://www.youtube.com/@sumitdangcommerceclasses5902';
-    const whatsapp = localStorage.getItem('ajaydang_whatsapp') || '919876543210';
-    const phone = localStorage.getItem('ajaydang_phone') || '+919876543210';
+    const whatsapp = localStorage.getItem('ajaydang_whatsapp') || '9810999362';
+    const phone = localStorage.getItem('ajaydang_phone') || '+919810999362';
     document.querySelectorAll('a[title="Instagram"]').forEach(link => {
         link.href = instagram;
     });
